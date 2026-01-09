@@ -33,11 +33,11 @@ span {
     color: #00d4ff;
 }
 
-/* --- CARDS (The secret fix) --- */
+/* --- CARDS (Optimized for all screens) --- */
 .contact-card,
 .success-card {
-    width: 95%;          /* This makes it big on phones */
-    max-width: 450px;    /* This keeps it normal on PC */
+    width: 95%;          /* Fills phone screen width */
+    max-width: 450px;    /* Stays small on PC */
     margin: 0 auto;
     padding: 30px;
     background-color: #111;
@@ -59,7 +59,7 @@ span {
     border: 1px solid #555;
     color: white;
     border-radius: 5px;
-    font-size: 16px; 
+    font-size: 16px; /* Prevents auto-zoom on iPhone */
 }
 
 textarea {
@@ -83,12 +83,18 @@ textarea {
     cursor: pointer;
 }
 
-/* --- MEDIA QUERY --- */
+/* --- MOBILE SPECIFIC FIXES --- */
 @media (max-width: 480px) {
-    .contact-section, .success-section { padding-top: 40px; }
-    h2 { font-size: 26px; }
-    .contact-card, .success-card { 
-        width: 100% !important; /* Force it to fill the phone screen */
-        padding: 20px; 
+    .contact-section, .success-section {
+        padding-top: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .contact-card, .success-card {
+        width: 100% !important; /* Force the card to fill the phone screen */
+        padding: 20px;
     }
 }
