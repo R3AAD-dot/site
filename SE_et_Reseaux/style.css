@@ -314,29 +314,28 @@ section {
 
 @media (max-width: 800px) {
     header {
-        padding: 15px 4%;
-        flex-direction: column;
+        padding: 15px 5%;
+        flex-direction: column; /* Stacks logo and menu */
+        height: auto;
         gap: 15px;
     }
 
     .navigation {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* Secret fix: allows links to move to a new line */
         justify-content: center;
         gap: 10px;
     }
 
-    .navigation a {
-        font-size: 14px;
-        padding: 5px 8px;
-    }
-
-   
-    .logo1, .navigation a[href*="port"] {
+    /* Styles for your 'Saif' button to make it pop */
+    .logo1 {
+        display: inline-block;
         background-color: #EE626B;
-        color: white !important;
-        border-radius: 5px;
-        padding: 5px 15px;
-        font-weight: bold;
+        color: #fff !important;
+        padding: 8px 20px;
+        border-radius: 50px;
+        text-transform: uppercase;
+        font-weight: 600;
     }
 }
+
