@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: #001f33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Orbitron", sans-serif;
+    color: #fff;
+}
+
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 8%;
+
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+
+.logo {
+    text-decoration: none;
+    font-weight: 700;
+    color: #00d4ff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
+
+
+form {
+    width: 330px;
+    padding: 25px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #00aaff;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+    color: #00aaff;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #00aaff;
+}
+
+
+.input {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #00aaff;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+
+.button {
+    text-align: center;
+}
+
+.button input {
+    padding: 9px 14px;
+    margin: 4px;
+    border-radius: 6px;
+    border: 1px solid #00aaff;
+    background: #0066aa;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button input:hover {
+    background: #0088dd;
+}
+

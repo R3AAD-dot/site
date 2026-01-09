@@ -1,0 +1,100 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    background: #111;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 8%;
+
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+
+.logo {
+    text-decoration: none;
+    font-weight: 700;
+    color: #00d4ff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
+
+.navigation {
+    display: flex;
+    gap: 25px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #e8e8e8;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #00d4ff;
+}
+
+.progress-container {
+    width: 400px;
+}
+
+.bar {
+    margin-bottom: 20px;
+}
+
+.bar span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.progress {
+    background: #333;
+    height: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    animation: fillBar 2s forwards;
+}
+
+.fill::after {
+    content: attr(style);
+}
+
+@keyframes fillBar {
+    from { width: 0; }
+    to { width: var(--percent); }
+}

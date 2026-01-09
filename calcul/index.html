@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Calculatrice</title>
+    <link rel="stylesheet" href="calcul.css">
+    <script src="calcul.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="../port/index1.html" class="logo">Saif</a>
+    </header>
+    <form>
+      <h1>Mini calculator</h1>
+
+      <label>Num 1 :</label>
+      <input type="text" class="input" id="a"><br><br>
+
+      <label>Num 2 :</label>
+      <input type="text" class="input" id="b">
+
+      <label>Résultat</label>
+      <input type="text" class="input" id="s">
+
+      <div class="button">
+        <input type="button" class="button" value="+" onclick="Addition()">
+        <input type="button" class="button" value="-" onclick="soustraction()">
+        <input type="button" class="button" value="*" onclick="multiplication()">
+        <input type="button" class="button" value="/" onclick="division()">
+        <input type="button" class="button" value="puissance" onclick="puissance()">
+        <input type="button" class="button" value="maximum" onclick="max()">
+        <input type="button" class="button" value="minimum" onclick="min()">
+        <input type="reset" class="button" value="supprimer">
+      </div>
+    </form>
+  </body>
+</html>
