@@ -1,4 +1,4 @@
-
+/* --- GLOBAL STYLES --- */
 * {
     margin: 0;
     padding: 0;
@@ -9,21 +9,20 @@
 body {
     background-color: #0a0a0a;
     color: white;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
-
+/* --- SECTIONS --- */
 .contact-section,
 .success-section {
     width: 100%;
-    min-height: 100vh; 
+    min-height: 100vh;
     text-align: center;
-    padding: 60px 15px; 
+    padding: 60px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 h2 {
     font-size: 32px;
@@ -34,11 +33,11 @@ span {
     color: #00d4ff;
 }
 
-
+/* --- CARDS (The secret fix) --- */
 .contact-card,
 .success-card {
-    width: 95%;          
-    max-width: 450px;   
+    width: 95%;          /* This makes it big on phones */
+    max-width: 450px;    /* This keeps it normal on PC */
     margin: 0 auto;
     padding: 30px;
     background-color: #111;
@@ -46,7 +45,7 @@ span {
     border: 1px solid #333;
 }
 
-
+/* --- INPUTS --- */
 .input-box {
     margin-bottom: 15px;
 }
@@ -60,7 +59,7 @@ span {
     border: 1px solid #555;
     color: white;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 16px; 
 }
 
 textarea {
@@ -68,6 +67,7 @@ textarea {
     resize: none;
 }
 
+/* --- BUTTONS --- */
 .btn {
     display: block;
     width: 100%;
@@ -81,26 +81,14 @@ textarea {
     text-align: center;
     border: none;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-.btn:hover {
-    background-color: #00b0cc;
-    transform: translateY(-2px);
-}
-
+/* --- MEDIA QUERY --- */
 @media (max-width: 480px) {
-    .contact-section,
-    .success-section {
-        padding-top: 40px;
-    }
-
-    h2 {
-        font-size: 26px;
-    }
-
-    .contact-card,
-    .success-card {
-        padding: 20px;
+    .contact-section, .success-section { padding-top: 40px; }
+    h2 { font-size: 26px; }
+    .contact-card, .success-card { 
+        width: 100% !important; /* Force it to fill the phone screen */
+        padding: 20px; 
     }
 }
