@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #0a0a0a; /* Deep black from SE theme */
+    background-color: #0a0a0a;
     color: #fff;
 }
 
@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 12px 8%;
-    background: #111; /* Darker header */
+    background: #111;
     border-bottom: 1px solid #222;
     box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
@@ -79,7 +79,7 @@ section {
     color: #00d4ff;
     font-size: 48px;
     text-transform: uppercase;
-    text-shadow: 0 0 15px rgba(0, 212, 255, 0.5); /* Glow effect added */
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
 }
 
 .main h3 {
@@ -94,7 +94,7 @@ section {
     background: rgba(0, 212, 255, 0.3);
     padding: 14.5px 37px;
     text-decoration: none;
-    border: 1px solid #00d4ff; /* Added border to match SE */
+    border: 1px solid #00d4ff;
     border-radius: 15px;
     transition: 0.4s ease;
     cursor: pointer;
@@ -142,7 +142,7 @@ section {
     padding: 35px 25px;
     margin: 15px;
     border-radius: 15px;
-    background: rgba(255,255,255,0.05); /* Translucent dark cards */
+    background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     transition: 0.4s;
@@ -175,7 +175,7 @@ section {
 }
 
 .projects {
-    background: rgba(255,255,255,0.02); /* Subtle dark contrast */
+    background: rgba(255,255,255,0.02);
 }
 
 .projectcard {
@@ -249,22 +249,22 @@ section {
     font-weight: bold;
 }
 
-/* --- Mobile Responsiveness --- */
+
 @media (max-width: 768px) {
     header {
-        padding: 10px 4%; /* Smaller padding on top */
+        padding: 10px 4%;
     }
 
     .navigation {
-        display: none; /* Hides the menu on phones to save space */
+        display: none;
     }
 
     section {
-        padding: 80px 4%; /* More room for content */
+        padding: 80px 4%;
     }
 
     .main h2 span {
-        font-size: 32px; /* Smaller text so it doesn't overflow */
+        font-size: 32px;
     }
 
     .main h3 {
@@ -275,15 +275,16 @@ section {
         font-size: 28px;
     }
 
-    /* This part makes cards stack 1 by 1 on phones */
+    
     .card, .projectcard {
         width: 100%; 
         margin: 10px 0;
     }
 
     .footer {
-        flex-direction: column; /* Stacks footer text and icons */
+        flex-direction: column;
         gap: 20px;
         text-align: center;
     }
 }
+
