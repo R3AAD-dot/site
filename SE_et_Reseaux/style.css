@@ -310,3 +310,33 @@ section {
     color: #00d4ff;
     font-weight: bold;
 }
+
+
+@media (max-width: 800px) {
+    header {
+        padding: 15px 4%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navigation a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+   
+    .logo1, .navigation a[href*="port"] {
+        background-color: #EE626B;
+        color: white !important;
+        border-radius: 5px;
+        padding: 5px 15px;
+        font-weight: bold;
+    }
+}
