@@ -232,7 +232,7 @@ body {
     margin-right: 20px;
 }
 
-/* --- GAMING STORE MOBILE RESPONSIVENESS --- */
+
 @media (max-width: 1024px) {
     .header, .Nav, .trendingCon {
         padding-left: 20px;
@@ -245,7 +245,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    /* Header Fix */
+ 
     .header {
         flex-direction: column;
         height: auto;
@@ -260,9 +260,9 @@ body {
         margin-top: 20px;
     }
 
-    /* Banner/Hero Section */
+  
     .Nav {
-        flex-direction: column-reverse; /* Put text below image for better look */
+        flex-direction: column-reverse
         padding: 40px 20px;
         text-align: center;
     }
@@ -279,7 +279,7 @@ body {
         margin-bottom: 30px;
     }
 
-    /* Search Bar Fix */
+  
     .search {
         margin-top: 40px;
         display: flex;
@@ -293,15 +293,15 @@ body {
     }
 
     .search .searchBtn {
-        position: static; /* Removes the absolute positioning on mobile */
+        position: static;
         width: 90%;
     }
 
-    /* Trending Games Cards */
+  
     .tCard {
         flex-direction: column;
         align-items: center;
-        gap: 80px; /* Space for the overlapping info boxes */
+        gap: 80px; 
     }
 
     .tCard .card {
@@ -313,3 +313,4 @@ body {
         width: 100%;
     }
 }
+
