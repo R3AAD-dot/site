@@ -78,3 +78,40 @@ textarea {
 .btn:hover {
     background-color: #00b0cc;
 }
+
+/* --- CONTACT & SUCCESS MOBILE RESPONSIVENESS --- */
+@media (max-width: 600px) {
+    .contact-section,
+    .success-section {
+        padding: 40px 15px;
+        height: auto; /* Prevents the form from being squished */
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Starts form near the top */
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    /* This makes the card fill the phone screen width */
+    .contact-card,
+    .success-card {
+        width: 95%; /* Fills almost the whole width */
+        margin: 0 auto;
+        padding: 25px 15px;
+        background-color: #111;
+    }
+
+    /* Make inputs and buttons easier to tap with fingers */
+    .input-box input, 
+    .input-box select, 
+    .input-box textarea,
+    .btn {
+        font-size: 16px; /* Prevents iPhone from auto-zooming on inputs */
+        padding: 15px;
+    }
+}
+
